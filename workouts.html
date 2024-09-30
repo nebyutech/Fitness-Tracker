@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Tracker - Workouts</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Navbar with Return to Home Button -->
+  <nav class="navbar">
+    <a class="navbar-brand" href="index.html">Fitness Tracker</a>
+    <ul class="navbar-buttons">
+      <li><a href="index.html" class="nav-button">Return to Home</a></li>
+      <li><a href="login.html" class="nav-button">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Fitness Levels Section with Hover and Responsive Table -->
+  <section class="fitness-levels">
+    <h2>Select Your Fitness Level</h2>
+
+    <!-- Beginner Plan -->
+    <div class="fitness-level beginner">
+      <h3>Beginner Plan</h3>
+      <table class="fitness-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Exercise</th>
+            <th>Duration</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Day 1</td>
+            <td>Cardio</td>
+            <td>20 mins</td>
+            <td>Light jog or brisk walking</td>
+          </tr>
+          <tr>
+            <td>Day 2</td>
+            <td>Yoga</td>
+            <td>20 mins</td>
+            <td>Full body stretch</td>
+          </tr>
+          <tr>
+            <td>Day 3</td>
+            <td>Strength Training</td>
+            <td>20 mins</td>
+            <td>Bodyweight exercises</td>
+          </tr>
+          <tr>
+            <td>Day 4</td>
+            <td>HIIT</td>
+            <td>15 mins</td>
+            <td>Low-impact HIIT</td>
+          </tr>
+          <tr>
+            <td>Day 5</td>
+            <td>Rest</td>
+            <td>-</td>
+            <td>Active recovery</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Intermediate Plan -->
+    <div class="fitness-level intermediate">
+      <h3>Intermediate Plan</h3>
+      <table class="fitness-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Exercise</th>
+            <th>Duration</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Day 1</td>
+            <td>Cardio</td>
+            <td>30 mins</td>
+            <td>Jogging or cycling</td>
+          </tr>
+          <tr>
+            <td>Day 2</td>
+            <td>Strength Training</td>
+            <td>40 mins</td>
+            <td>Upper body exercises</td>
+          </tr>
+          <tr>
+            <td>Day 3</td>
+            <td>Yoga</td>
+            <td>40 mins</td>
+            <td>Flexibility and balance</td>
+          </tr>
+          <tr>
+            <td>Day 4</td>
+            <td>HIIT</td>
+            <td>25 mins</td>
+            <td>High-intensity intervals</td>
+          </tr>
+          <tr>
+            <td>Day 5</td>
+            <td>Core Training</td>
+            <td>30 mins</td>
+            <td>Core and abs exercises</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Advanced Plan -->
+    <div class="fitness-level advanced">
+      <h3>Advanced Plan</h3>
+      <table class="fitness-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Exercise</th>
+            <th>Duration</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Day 1</td>
+            <td>Running</td>
+            <td>40 mins</td>
+            <td>Increase speed and endurance</td>
+          </tr>
+          <tr>
+            <td>Day 2</td>
+            <td>Strength Training</td>
+            <td>45 mins</td>
+            <td>Full body workout</td>
+          </tr>
+          <tr>
+            <td>Day 3</td>
+            <td>Power Yoga</td>
+            <td>50 mins</td>
+            <td>Strength and flexibility</td>
+          </tr>
+          <tr>
+            <td>Day 4</td>
+            <td>HIIT</td>
+            <td>30 mins</td>
+            <td>High-intensity</td>
+          </tr>
+          <tr>
+            <td>Day 5</td>
+            <td>Core Training</td>
+            <td>40 mins</td>
+            <td>Core and strength</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Workout Videos -->
+  <section class="workout-videos">
+    <h2>Workout Videos</h2>
+    <div class="video-container">
+      <video controls width="100%">
+        <source src="https://youtu.be/p7In4bc0x0Y" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Beginner Cardio Workout</p>
+    </div>
+    <div class="video-container">
+      <video controls width="100%">
+        <source src="video/video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Intermediate Strength Workout</p>
+    </div>
+    <div class="video-container">
+      <video controls width="100%">
+        <source src="video/video3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Advanced HIIT Workout</p>
+    </div>
+  </section>
+
+  <!-- BMI and Body Fat Tracking -->
+  <section id="progress-section" class="progress-section">
+    <h2>Your Fitness Progress</h2>
+    <form id="progress-form">
+      <label for="bmi-progress-input">Enter your BMI:</label>
+      <input type="number" id="bmi-progress-input" placeholder="Enter BMI" required>
+      <label for="body-fat-progress-input">Enter your Body Fat Percentage:</label>
+      <input type="number" id="body-fat-progress-input" placeholder="Enter Body Fat %" required>
+      <button type="submit" class="btn btn-dark">Save Progress</button>
+    </form>
+    
+    <div id="saved-progress">
+      <p>Last recorded BMI: <span id="bmi-progress-display"></span></p>
+      <p>Last recorded Body Fat: <span id="body-fat-progress-display"></span></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Fitness Tracker. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

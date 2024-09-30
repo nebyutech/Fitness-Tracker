@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Tracker - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: var(--primary-color);
+    }
+    h1 {
+      font-family: 'Arial', sans-serif;
+    }
+  </style>
+
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a class="navbar-brand" href="index.html">Fitness Tracker</a>
+    <ul class="navbar-buttons">
+      <li><a href="index.html" class="nav-button">Home</a></li>
+      <li><a href="workouts.html" class="nav-button">Workouts</a></li>
+      <li><a href="login.html" class="nav-button">Login</a></li>
+      <li class="dropdown">
+        <a href="#" class="nav-button dropdown-btn">More</a>
+        <ul class="dropdown-content">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with Video Background -->
+  <section class="hero-section">
+    <video autoplay muted loop id="bg-video">
+      <source src="./video/video1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Tracking Your Fitness Journey</h1>
+      <p>Stay fit and motivated with the best tools to achieve your fitness goals.</p>
+      <a href="workouts.html" class="btn btn-primary">Explore Workouts</a>
+    </div>
+  </section>
+
+  <!-- Carousel Section -->
+  <section id="carousel-section">
+    <div id="carousel" class="carousel-container">
+      <div class="carousel-slide">
+        <div class="carousel-item">
+          <img src="images/image1.png" alt="Couple Running">
+          <div class="quote-overlay">"The only bad workout is the one that didn't happen."</div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/image2.png" alt="Couple Jogging with Puppy">
+          <div class="quote-overlay">"Push harder than yesterday if you want a different tomorrow."</div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/image3.png" alt="Man Lifting Weights">
+          <div class="quote-overlay">"Success starts with self-discipline."</div>
+        </div>
+        <!-- Additional Images -->
+        <div class="carousel-item">
+            <img src="images/image4.png" alt="Training Image 4">
+            <div class="quote-overlay">"Consistency is key to success."</div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/image5.png" alt="Training Image 5">
+            <div class="quote-overlay">"Your only limit is you."</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BMI Calculator -->
+  <section id="bmi-calculator" class="calculator-section">
+    <h2>BMI Calculator</h2>
+    <!-- BMI Calculator Form -->
+<form id="bmi-form">
+    <input type="text" id="height" placeholder="Height (cm)" pattern="^\d+(\.\d{1,2})?$" required>
+    <input type="text" id="weight" placeholder="Weight (kg)" pattern="^\d+(\.\d{1,2})?$" required>
+    <button type="submit" class="btn btn-dark">Calculate BMI</button>
+  </form>  
+    <p id="bmi-result"></p>
+  </section>
+
+
+
+  <!-- Body Fat Calculator -->
+  <section id="body-fat-calculator" class="calculator-section">
+    <h2>Body Fat Calculator</h2>
+    <!-- Body Fat Calculator Form -->
+<form id="body-fat-form">
+    <input type="text" id="waist" placeholder="Waist (cm)" pattern="^\d+(\.\d{1,2})?$" required>
+    <input type="text" id="neck" placeholder="Neck (cm)" pattern="^\d+(\.\d{1,2})?$" required>
+    <input type="text" id="hip" placeholder="Hip (cm, optional for men)" pattern="^\d+(\.\d{1,2})?$">
+    <button type="submit" class="btn btn-dark">Calculate Body Fat</button>
+  </form>
+    <p id="body-fat-result"></p>
+</section>
+
+<section id="healthy-eating" class="healthy-eating-section">
+    <h2>Healthy Eating & Meal Prep</h2>
+    <div class="meal-prep-container">
+      <div class="meal-prep">
+        <a href="https://www.healthline.com/nutrition/meal-prepping-guide" target="_blank">
+          <img src="images/healthyeating.jpg" alt="Healthy Eating" class="meal-img"/>
+          <p>Click here to learn more about healthy eating meal prep.</p>
+        </a>
+      </div>
+      <div class="meal-prep">
+        <a href="https://www.dietdoctor.com/low-carb/keto/meal-plan" target="_blank">
+          <img src="images/ketofriendly.jpg" alt="Keto Friendly Meals" class="meal-img"/>
+          <p>Click here to explore keto-friendly meal plans.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+ <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <h2>What Our Subscriber Say</h2>
+    <div class="testimonials-carousel-container">
+      <div class="testimonials-carousel-slide">
+        <div class="testimonial-card">
+          <p class="testimonial-text">This app helped me reach my fitness goals!</p>
+          <h5 class="testimonial-author">Sindy Ali</h5>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">Amazing workouts and progress tracking.</p>
+          <h5 class="testimonial-author">Bob Thom</h5>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">Highly recommend for staying fit and motivated.</p>
+          <h5 class="testimonial-author">Martha Steven</h5>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">Super easy to use and well-designed!</p>
+          <h5 class="testimonial-author">Eco Bangue</h5>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">Great results, highly recommend!</p>
+          <h5 class="testimonial-author">Castilo Marcs</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Motivational GIF Section -->
+<section class="gif-section">
+    <h2>Stay Motivated!</h2>
+    <img src="https://media.tenor.com/images/a8514c1d2bc4099fea0f00896c8252d1/tenor.gif" alt="Motivational GIF" style="max-width: 100%; height: auto;">
+  </section>
+  
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Fitness Tracker. All rights reserved.</p>
+    <div class="social-media-links">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
