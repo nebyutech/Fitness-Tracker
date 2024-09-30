@@ -24,7 +24,7 @@ Fitness Tracker is a small website designed to help users track their fitness jo
 - Google Fonts (Roboto)
 
 ## Hosting:
-This project is hosted on GitHub. You can view the project here: [GitHub Link].
+This project is hosted on GitHub. You can view the project here: https://github.com/nebyutech/Fitness-Tracker.
 
 ## How to Run the Project:
 1. Clone the repository from GitHub.
